@@ -1,0 +1,67 @@
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 40px;
+  height: 80vh;
+  justify-content: space-between;
+  font-size: 10px;
+  > div {
+    min-height: 19px;
+    width: 80%;
+  }
+  div {
+    text-align: center;
+  }
+}
+#outline-box-shadow {
+  background: yellow;
+  box-shadow: 0 0 0 1em #655, 0 0 0 1.5em #ccc,
+    0 0.2em 0.5em 1.5em rgba(0, 0, 0, 0.6);
+}
+
+#outline-outline-radius {
+  background: yellow;
+  border: 1em solid #655;
+  outline: 0.3em dashed #ccc;
+  outline-offset: -0.7em;
+  border-radius: 0.6em;
+}
+
+#linear-string {
+  // 渐变颜色 起始值不同
+  // background: linear-gradient(
+  //   to right,#fb3 10%,#ccc 90%
+  // );
+
+  // 立刻变颜色 起始值相同
+  // background: linear-gradient(
+  //   to right,#fb3 25%,#ccc 25%,#ccc 50%, #fb3 50%,#fb3 75%, #ccc 75%
+  // );
+
+  // 带角度的渐变纹 重复
+  background: repeating-linear-gradient(
+    60deg,
+    #fb3 0,
+    #fb3 10%,
+    #ccc 0,
+    #ccc 20%
+  );
+}
+
+#linear-net {
+  background: red;
+  background-image: linear-gradient(#fb3 2px, transparent 0),
+    linear-gradient(90deg, #fb3 1px, transparent 0);
+  background-size: 75px 8px, 15px 75px;
+}
+
+#conic-gradient {
+  background: conic-gradient(red, orange, yellow, green, blue);
+}
+
+#conic-gradient-chess {
+  // background: conic-gradient(red 0,red 25%,orange 0,orange 50%,red 0,red 75%,orange 75%,orange 0);
+  background: repeating-conic-gradient(red 0, red 25%, orange 25%, orange 50%);
+  background-size: 10px 10px;
+}
