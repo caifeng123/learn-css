@@ -1,0 +1,14 @@
+#Rhomboid {
+  position: relative;
+  &::after {
+    content: "";
+    z-index: -1;
+    background: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: skew(45deg);
+  }
+}

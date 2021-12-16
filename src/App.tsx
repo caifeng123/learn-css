@@ -1,17 +1,48 @@
+/**
+ * @file 示例入口
+ * @author caifeng01
+ */
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Introduction from "./introduction";
+import "antd/dist/antd.css";
 import "./index.less";
 
-export default function App() {
+const App = () => {
   return (
-    <div className="App">
-      <div id="outline-box-shadow">shadow实现多边框,不占空间,可多写</div>
-      <div id="outline-outline-radius">
-        <div>outline实现多边框虚线,不占空间,可改变线条类型,可控制位置</div>
-        <div>border-radius影响 border、shadow、outline</div>
-      </div>
-      <div id="linear-string">渐变条纹</div>
-      <div id="linear-net">网格条纹</div>
-      <div id="conic-gradient">角向渐变</div>
-      <div id="conic-gradient-chess">角向渐变实现棋盘</div>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Introduction />} />
+          {/* <Route path="/cchooksdemo" element={<DemoHeader />}>
+            <Route path="UseSetStateDemo" element={<UseSetStateDemo />} />
+            <Route path="UseDeepValue" element={<UseDeepValue />} />
+            <Route path="UseConcurrentDemo" element={<UseConcurrentDemo />} />
+            <Route path="UseCascadeDemo" element={<UseCascadeDemo />} />
+            <Route path="UseCounterDemo" element={<UseCounterDemo />} />
+            <Route path="UseDeepEffectDemo" element={<UseDeepEffectDemo />} />
+            <Route
+              path="UseEffectCallbackDemo"
+              element={<UseEffectCallbackDemo />}
+            />
+            <Route path="UseRequestDemo" element={<UseRequestDemo />} />
+          </Route>
+          <Route path="/teachdemo" element={<DemoHeader />}>
+            <Route path="MemoDemo" element={<MemoDemo />} />
+            <Route path="UseEffectDemo" element={<UseEffectDemo />} />
+            <Route path="UseCascadeDemo" element={<UseCascadeDemo />} />
+            <Route path="UseCounterDemo" element={<UseCounterDemo />} />
+            <Route path="UseDeepEffectDemo" element={<UseDeepEffectDemo />} />
+            <Route
+              path="UseEffectCallbackDemo"
+              element={<UseEffectCallbackDemo />}
+            />
+            <Route path="UseRequestDemo" element={<UseRequestDemo />} />
+          </Route> */}
+        </Routes>
+      </BrowserRouter>
+    </>
   );
-}
+};
+
+export default App;
