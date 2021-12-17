@@ -12,3 +12,50 @@
     transform: skew(45deg);
   }
 }
+
+#clip-path-rhombus {
+  height: 50px;
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  background: yellowgreen;
+}
+
+#clip-path-eight-edge {
+  height: 50px;
+  clip-path: polygon(
+    33% 0,
+    66% 0,
+    99% 33%,
+    99% 66%,
+    66% 99%,
+    33% 99%,
+    0 66%,
+    0 33%
+  );
+  background: yellowgreen;
+}
+
+#threeD-trapezoid {
+  position: relative;
+  &::after {
+    background: pink;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: perspective(1em) rotateX(5deg);
+    transform-origin: bottom right;
+    // transform-origin: bottom left;
+    // transform-origin: bottom left;
+  }
+}
+
+#conic-gradient {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  // background: #ccc;
+  background: conic-gradient(red 40%, #ccc 0, #eee);
+}
