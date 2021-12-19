@@ -6,11 +6,12 @@ import { memo, useRef, useState } from "react";
 import { CarouselRef } from "antd/lib/carousel";
 import { Carousel } from "antd";
 import { CaretLeftOutlined, CaretRightOutlined } from "@ant-design/icons";
-import { Shadow, BorderImage, Transform } from "./teach";
+import { Shadow, BorderImage, Transform, Word } from "./teach";
 // import TeachDemos from "./teachdemos";
 // import { useCounter } from "../hooks";
 
 const config = {
+  Word: <Word />,
   Transform: <Transform />,
   BorderImage: <BorderImage />,
   Shadow: <Shadow />

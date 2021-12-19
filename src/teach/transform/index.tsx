@@ -10,9 +10,7 @@ export default () => {
       <div id="clip-path-rhombus">菱形</div>
       <div id="clip-path-eight-edge">8边形</div>
       <div id="threeD-trapezoid">3d实现梯形,修改通过transform-origin</div>
-      <div id="conic-gradient" data-value="30%">
-        饼图 角向量
-      </div>
+      <div id="conic-gradient">饼图 角向量</div>
     </div>
   );
 };
