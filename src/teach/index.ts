@@ -5,3 +5,4 @@ export { default as Word } from "./word";
 export { default as Scroll } from "./scroll";
 export { default as Feature } from "./feature";
 export { default as Adaptive } from "./adaptive";
+export { default as Animation } from "./animation";

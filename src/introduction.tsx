@@ -13,12 +13,14 @@ import {
   Word,
   Scroll,
   Adaptive,
-  Feature
+  Feature,
+  Animation
 } from "./teach";
 // import TeachDemos from "./teachdemos";
 // import { useCounter } from "../hooks";
 
 const config = {
+  Animation: <Animation />,
   Adaptive: <Adaptive />,
   Feature: <Feature />,
   Scroll: <Scroll />,
