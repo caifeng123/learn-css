@@ -1,0 +1,20 @@
+.ant-carousel {
+  .App {
+    // 正式css 上面为了提升优先级 antd原先样式覆盖
+    img {
+      vertical-align: bottom;
+    }
+    .small {
+      width: 100px;
+      height: 100px;
+    }
+    .big {
+      display: none;
+    }
+    :focus + .big {
+      height: 250px;
+      width: 250px;
+      display: inline-block;
+    }
+  }
+}

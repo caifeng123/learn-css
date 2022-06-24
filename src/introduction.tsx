@@ -14,12 +14,18 @@ import {
   Scroll,
   Adaptive,
   Feature,
-  Animation
+  Animation,
+  Checked,
+  Disabled,
+  Focus
 } from "./teach";
 // import TeachDemos from "./teachdemos";
 // import { useCounter } from "../hooks";
 
 const config = {
+  Focus: <Focus />,
+  Disabled: <Disabled />,
+  Checked: <Checked />,
   Animation: <Animation />,
   Adaptive: <Adaptive />,
   Feature: <Feature />,
