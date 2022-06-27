@@ -1,0 +1,34 @@
+[type="checkbox"],
+[type="radio"] {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
+.cs-topic {
+  display: inline-block;
+  width: 64px;
+  margin-top: 5px;
+  padding: 5px 0;
+  border: 1px solid silver;
+  text-align: center;
+  cursor: pointer;
+}
+.cs-topic:hover {
+  border-color: gray;
+}
+:checked + .cs-topic {
+  border-color: deepskyblue;
+  background-color: azure;
+}
+/* 选择计数器 */
+body {
+  counter-reset: topicCounter;
+}
+:checked + .cs-topic {
+  counter-increment: topicCounter;
+}
+.cs-topic-counter::before {
+  color: red;
+  margin: 0 2px;
+  content: counter(topicCounter);
+}

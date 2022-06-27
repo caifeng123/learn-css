@@ -17,15 +17,21 @@ import {
   Animation,
   Checked,
   Disabled,
-  Focus
+  Focus,
+  Counter,
+  PlaceholderShown,
+  Target
 } from "./teach";
 // import TeachDemos from "./teachdemos";
 // import { useCounter } from "../hooks";
 
 const config = {
-  Focus: <Focus />,
-  Disabled: <Disabled />,
-  Checked: <Checked />,
+  ":target": <Target />,
+  ":placeholder-shown": <PlaceholderShown />,
+  Counter: <Counter />,
+  ":focus": <Focus />,
+  ":disabled": <Disabled />,
+  ":checked": <Checked />,
   Animation: <Animation />,
   Adaptive: <Adaptive />,
   Feature: <Feature />,

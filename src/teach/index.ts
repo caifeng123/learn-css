@@ -9,3 +9,6 @@ export { default as Animation } from "./animation";
 export { default as Checked } from "./checked";
 export { default as Disabled } from "./disabled";
 export { default as Focus } from "./focus";
+export { default as Counter } from "./counter";
+export { default as PlaceholderShown } from "./placeholder-shown";
+export { default as Target } from "./target";
