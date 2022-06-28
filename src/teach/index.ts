@@ -12,3 +12,4 @@ export { default as Focus } from "./focus";
 export { default as Counter } from "./counter";
 export { default as PlaceholderShown } from "./placeholder-shown";
 export { default as Target } from "./target";
+export { default as NthChild } from "./nth-child";

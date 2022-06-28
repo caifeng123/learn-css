@@ -20,18 +20,13 @@ import {
   Focus,
   Counter,
   PlaceholderShown,
-  Target
+  Target,
+  NthChild
 } from "./teach";
 // import TeachDemos from "./teachdemos";
 // import { useCounter } from "../hooks";
 
 const config = {
-  ":target": <Target />,
-  ":placeholder-shown": <PlaceholderShown />,
-  Counter: <Counter />,
-  ":focus": <Focus />,
-  ":disabled": <Disabled />,
-  ":checked": <Checked />,
   Animation: <Animation />,
   Adaptive: <Adaptive />,
   Feature: <Feature />,
@@ -39,7 +34,15 @@ const config = {
   Word: <Word />,
   Transform: <Transform />,
   BorderImage: <BorderImage />,
-  Shadow: <Shadow />
+  Shadow: <Shadow />,
+  Counter: <Counter />,
+  ":target": <Target />,
+  ":placeholder-shown": <PlaceholderShown />,
+  ":nth-child": <NthChild />,
+  ":focus": <Focus />,
+  ":disabled": <Disabled />,
+  ":checked": <Checked />
+
   // TEACHDEMOS: <TeachDemos />
 };
 

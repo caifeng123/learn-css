@@ -1,0 +1,15 @@
+.nc-ol {
+  border: 1px solid;
+  .nc-li {
+    // 1-3绿色 4-7黄色 8-9红色
+    &:nth-child(-n + 3) {
+      background-color: green;
+    }
+    &:nth-child(n + 4):nth-child(-n + 7) {
+      background-color: yellow;
+    }
+    &:nth-child(n + 8) {
+      background-color: red;
+    }
+  }
+}
